@@ -18,6 +18,6 @@ Practical DevOps learning journey through real projects.
 
 devops_portfolio/
 ├── linux/
-│ └── scripts/
-│ └── system_info.py
+│   └── scripts/
+│       └── system_info.py
 └── README.md
