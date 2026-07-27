@@ -44,6 +44,18 @@ def check_processes():
         print(f" {status} | {proc} ")
 
 
+def check_last_loggin():
+    """Check Last Loggin Sessions for security auditing."""
+    print("\n [LAST_LOGGIN]")
+    result = subprocess.run(
+            ['last', '-n', '5'], capture_output=True, text=True
+            )
+    for line in result.stdout.splitlines()[:5]:
+        if line.strip():
+            print(f' {line}')
+
+
+
 def main():
     print("=" * 45)
     print(" SERVER HEALTH CHECK - DevOps portfolio ")
@@ -54,6 +66,8 @@ def main():
     print("=" * 45)
     check_processes()
     print("=" *45)
+    check_last_loggin()
+    print("=" * 45)
 
 if __name__=="__main__":
     main()
