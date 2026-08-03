@@ -17,11 +17,11 @@ Practical DevOps learning journey through real projects.
 
 ## Scripts 
 
-|        Script         |                    Description                  |
-|-----------------------|-------------------------------------------------|
-| system_info.py        | Collects system info from a Linux Server        |
-| server_health.py      | Monitors, Disk, Memory, Process and last Loggin |
-
+|        Script                  |                    Description                  |
+|--------------------------------|-------------------------------------------------|
+| system_info.py                 | Collects system info from a Linux Server        |
+| server_health.py               | Monitors, Disk, Memory, Process and last Loggin |
+| network_diagnostic.py          | Connectivity, DNS and HTTP checks script        | 
 
 ## Structure
 
