@@ -30,6 +30,8 @@ devops_portfolio/
 ├── linux/
 │   └── scripts/
 │       └── system_info.py
+|       └── server_health.py
+|       └── network_diagnostic.py
 └── README.md
 ```
 
