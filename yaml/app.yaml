@@ -1,0 +1,19 @@
+#My First App Yaml
+
+
+application: 
+  name: devops-app
+  version: 1.0
+  environment: production
+  port: 8080
+
+db: 
+  image: postgres
+  host: postgres.user.test
+  name: db_test
+  port: 8892
+
+environment_vars:
+  admin: user123
+  name: CrisJ
+  passw: pass.env

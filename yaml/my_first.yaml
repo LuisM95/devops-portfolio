@@ -1,0 +1,16 @@
+# My First YAML File
+
+name: Luis Martel
+age: 30
+role: Student DevOps Engineer
+
+
+Skills: 
+  - Python
+  - Linux
+  - Git
+
+Server: 
+  hostname: localhost
+  ip: 192.168.80.132
+  os: RHEL 10

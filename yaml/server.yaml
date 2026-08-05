@@ -1,0 +1,25 @@
+# My RHEL Server Configuration 
+
+
+server:
+  name: localhost
+  ip: 192.168.80.132
+  os: RHEL 10
+  memory: 2GB
+  active: true
+
+
+services:
+  - name: ssh
+    port: 22
+    status: running
+  - name: firewalld
+    port: null
+    status: running
+  - name: cockpit
+    port: 9090
+    status: running
+
+owner: 
+  name: Luis Martel
+  role: DevOps Engineer
