@@ -4,7 +4,7 @@ Practical DevOps learning journey through real projects.
 
 ## Roadmap Progress
 - [x] Linux & Python Scripting
-- [ ] Networking
+- [x] Networking
 - [ ] YAML
 - [ ] Git & GitHub
 - [ ] Docker
@@ -17,16 +17,25 @@ Practical DevOps learning journey through real projects.
 
 ## Scripts 
 
-|        Script                  |                    Description                  |
+|             Script             |                    Description                  |
 |--------------------------------|-------------------------------------------------|
-| system_info.py                 | Collects system info from a Linux Server        |
-| server_health.py               | Monitors, Disk, Memory, Process and last Loggin |
-| network_diagnostic.py          | Connectivity, DNS and HTTP checks script        | 
+| `system_info.py`               | Collects system info from a Linux Server        |
+| `server_health.py`             | Monitors, Disk, Memory, Process and last Loggin |
+| `network_diagnostic.py`        | Connectivity, DNS and HTTP checks script        | 
+
+## YAML 
+|             FILE               |                     Description                 |
+|--------------------------------|-------------------------------------------------|
+|        `server.yaml`           |  RHEL server configuration                      |
+|         `app.yaml`             |  "Web Application configuration"                |
 
 ## Structure
 
 ```
 devops_portfolio/
+├── yaml/
+│   └── server.yaml
+│   └── app.yaml
 ├── linux/
 │   └── scripts/
 │       └── system_info.py
