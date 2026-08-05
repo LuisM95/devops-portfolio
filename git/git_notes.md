@@ -1,0 +1,17 @@
+# Git Advanced Notes 
+
+## Useful Commands 
+
+### Log
+
+- `git log --oneline` - compatc history
+- `git log --graph` - visual branch history 
+- `git show <hash>` - show commit details 
+- `git blame <file>` - who wrote each line
+
+### Branches 
+
+- `git branch` - list branches
+- `git checkout -b <name>` - create and switch branch 
+- `git merge <branch>` - merge branch into current
+- `git branch -d <name>` - delete branch  
