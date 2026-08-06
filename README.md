@@ -5,8 +5,8 @@ Practical DevOps learning journey through real projects.
 ## Roadmap Progress
 - [x] Linux & Python Scripting
 - [x] Networking
-- [ ] YAML
-- [ ] Git & GitHub
+- [x] YAML
+- [x] Git & GitHub
 - [ ] Docker
 - [ ] Cloud (AWS/GCP(AZURE)
 - [ ] CI/CD 
@@ -29,18 +29,25 @@ Practical DevOps learning journey through real projects.
 |        `server.yaml`           |  RHEL server configuration                      |
 |         `app.yaml`             |  "Web Application configuration"                |
 
+## GIT and GITHUB 
+|             FILE               |                     Description                 |
+|--------------------------------|-------------------------------------------------|
+|        `git/git_notes.md`      |  Add actions and practice with a git            |
+
 ## Structure
 
 ```
 devops_portfolio/
-├── yaml/
-│   └── server.yaml
-│   └── app.yaml
 ├── linux/
 │   └── scripts/
 │       └── system_info.py
 |       └── server_health.py
 |       └── network_diagnostic.py
+├── yaml/
+│   └── server.yaml
+│   └── app.yaml
+├── git/
+│   └── git_notes.md
 └── README.md
 ```
 
