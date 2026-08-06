@@ -18,3 +18,5 @@
 
 ## Conflict Resolution
 - This line was written in main branch
+- This line was written in feature branch
+- Conflicts happend when two branches modify the same line
