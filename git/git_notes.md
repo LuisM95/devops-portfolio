@@ -15,3 +15,6 @@
 - `git checkout -b <name>` - create and switch branch 
 - `git merge <branch>` - merge branch into current
 - `git branch -d <name>` - delete branch  
+
+## Conflict Resolution
+- This line was written in main branch
