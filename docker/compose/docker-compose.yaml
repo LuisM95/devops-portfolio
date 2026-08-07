@@ -1,0 +1,16 @@
+# Yaml
+
+services: 
+  server-health: 
+    build:
+      context: ../system_info
+      dockerfile: Dockerfile
+    container_name: server_health
+    restart: "no"
+
+  nginx:
+    image: nginx:alpine
+    container_name: nginx-web
+    ports:
+      - "8080:80"
+    restart: unless-stopped
