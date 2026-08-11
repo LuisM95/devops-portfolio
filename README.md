@@ -7,7 +7,8 @@ Practical DevOps learning journey through real projects.
 - [x] Networking
 - [x] YAML
 - [x] Git & GitHub
-- [ ] Docker
+- [x] Docker
+    - [ ] Docker compose
 - [ ] Cloud (AWS/GCP(AZURE)
 - [ ] CI/CD 
 - [ ] Kubernetes
@@ -34,6 +35,14 @@ Practical DevOps learning journey through real projects.
 |--------------------------------|-------------------------------------------------|
 |        `git/git_notes.md`      |  Add actions and practice with a git            |
 
+## Docker 
+|             FILE               |                     Description                 |
+|--------------------------------|-------------------------------------------------|
+|    /system_info/Dockerfile     |     File docker configuration                   |
+|    /system_info/system_info.py |    Script with a system information             |
+|  /compose/docker-compose.yaml  |     A yaml configuration for a docker compose   |
+|         docker_notes.md        |    a small notations for docker                 | 
+
 ## Structure
 
 ```
@@ -48,6 +57,13 @@ devops_portfolio/
 │   └── app.yaml
 ├── git/
 │   └── git_notes.md
+├── docker
+│   └── system_info/
+│        └── Dockerfile
+│        └── system_info.py
+│   └── compose/
+│        └── docker-compose.yaml
+│   └── docker_notes.md
 └── README.md
 ```
 
