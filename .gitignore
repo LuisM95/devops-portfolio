@@ -1,0 +1,30 @@
+# Document for exclude de cache an binari files
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+#Pytest
+.pytest_cache/
+
+#Virtual Environments
+.venv/
+venv/
+env/
+
+#Editor Files
+*.swp
+*.swo
+*~
+
+#OS files
+.DS_store
+Thumbs.db
+
+#Environent Variables
+.env
+
+#Logs
+*.log
