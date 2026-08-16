@@ -8,10 +8,10 @@ Practical DevOps learning journey through real projects.
 - [x] YAML
 - [x] Git & GitHub
 - [x] Docker
-    - [ ] Docker compose
-- [ ] Cloud (AWS/GCP(AZURE)
-- [ ] CI/CD 
+    - [x] Docker compose
+- [x] CI/CD 
 - [ ] Kubernetes
+- [ ] Cloud (AWS/GCP(AZURE)
 - [ ] Observability
 - [ ] Infrastructure as Code (IAC) 
 
@@ -43,6 +43,13 @@ Practical DevOps learning journey through real projects.
 |  /compose/docker-compose.yaml  |     A yaml configuration for a docker compose   |
 |         docker_notes.md        |    a small notations for docker                 | 
 
+## CI - CD 
+|             FILE                   |                     Description                 |
+|------------------------------------|-------------------------------------------------|
+|   tests/test_system.info.py        |  An automated test for a CI/CD practice         |
+| .github/workflows/docker-buid-yaml |  CI/CD file automation test for a docker image  |
+
+
 ## Structure
 
 ```
@@ -64,6 +71,12 @@ devops_portfolio/
 │   └── compose/
 │        └── docker-compose.yaml
 │   └── docker_notes.md
+├── tests/
+│   └── test_system_info.py
+├── .github/
+│   └── workflows/
+│       └── docker-build.yaml
+├── .gitignore
 └── README.md
 ```
 
