@@ -1,0 +1,13 @@
+# Kubernetes config
+
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: system-info-job
+spec:
+  template:
+    spec:
+      containers:
+        - name: system-info
+          image: luismarteel/system_info:latest
+      restartPolicy: Never
