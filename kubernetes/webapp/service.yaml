@@ -1,0 +1,13 @@
+# Service Kubernetes config
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: devops-webapp-service
+spec:
+  selector:
+    app: devops-webapp
+  ports:
+  - port: 80
+    targetPort: 8080
+  type: NodePort
