@@ -1,5 +1,5 @@
 # Base image
-from python:3.11-slim
+FROM python:3.11-slim
 
 # Working directory 
 WORKDIR /app
@@ -11,5 +11,5 @@ COPY app.py .
 EXPOSE 8080
 
 # Run the server 
-CMD ['python3', 'app.py']
+CMD ["python3", "app.py"]
 
