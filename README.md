@@ -10,7 +10,9 @@ Practical DevOps learning journey through real projects.
 - [x] Docker
     - [x] Docker compose
 - [x] CI/CD 
-- [ ] Kubernetes
+- [x] Kubernetes
+    - [X] Kubernetes - Deployment
+    - [x] Kubernetes - Services 
 - [ ] Cloud (AWS/GCP(AZURE)
 - [ ] Observability
 - [ ] Infrastructure as Code (IAC) 
@@ -31,9 +33,10 @@ Practical DevOps learning journey through real projects.
 |         `app.yaml`             |  "Web Application configuration"                |
 
 ## GIT and GITHUB 
-|             FILE               |                     Description                 |
-|--------------------------------|-------------------------------------------------|
-|        `git/git_notes.md`      |  Add actions and practice with a git            |
+|           FILE              |                                 Description                              |
+|-----------------------------|--------------------------------------------------------------------------|
+|       `git/git_notes.md`    |  Add actions and practice with a git                                     |
+|        `.gitignore`         |  file for ignore and exclude files binaries to load on github repositori |
 
 ## Docker 
 |             FILE               |                     Description                 |
@@ -43,11 +46,26 @@ Practical DevOps learning journey through real projects.
 |  /compose/docker-compose.yaml  |     A yaml configuration for a docker compose   |
 |         docker_notes.md        |    a small notations for docker                 | 
 
+## Docker Images
+|             FILE                  |                     Description                 |
+|-----------------------------------|-------------------------------------------------|
+| `luismarteel/system-info:latest ` |  Automated test for a CICD pipelines            |
+|   `luismarteel/devops-webapp `    |  Web application with a Rest Endpoint           |
+
 ## CI - CD 
-|             FILE                   |                     Description                 |
-|------------------------------------|-------------------------------------------------|
-|   tests/test_system.info.py        |  An automated test for a CI/CD practice         |
-| .github/workflows/docker-buid-yaml |  CI/CD file automation test for a docker image  |
+|             FILE                     |                     Description                 |
+|--------------------------------------|-------------------------------------------------|
+|   `tests/test_system.info.py`        |  An automated test for a CI/CD practice         |
+| `.github/workflows/docker-buid-yaml` |  CI/CD file automation test for a docker image  |
+
+## Kubernetes 
+|             FILE                   |                     Description                     |
+|------------------------------------|-----------------------------------------------------|
+|      `Kubernetes/jobs.yaml`        |  Kubernetes job manifest for a system-info script   |
+|     `Kubernetes/webapp/app.py`     |  Web Application Source code                        |
+|   `kubernetes/webapp/Dockerfile`   |  Docker manifest configuration for webapp           |
+| `kubernetes/webapp/deployment.yaml`|  Kubernetes manifest for deployment with 3 replicas |
+| `kubernetes/webapp/service.yaml`   |  Kubernetes manifest for load balancing             |
 
 
 ## Structure
@@ -71,6 +89,13 @@ devops_portfolio/
 │   └── compose/
 │        └── docker-compose.yaml
 │   └── docker_notes.md
+├── kubernetes/
+│   └── jobs.yaml
+│   └── webapp/
+│       └── app.py
+│       └── Dockerfile
+│       └── deployment.yaml
+│       └── service.yaml
 ├── tests/
 │   └── test_system_info.py
 ├── .github/
