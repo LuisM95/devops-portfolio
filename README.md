@@ -7,10 +7,11 @@ Practical DevOps learning journey through real projects.
 - [x] Networking
 - [x] YAML
 - [x] Git & GitHub
-- [ ] Docker
-- [ ] Cloud (AWS/GCP(AZURE)
-- [ ] CI/CD 
+- [x] Docker
+    - [x] Docker compose
+- [x] CI/CD 
 - [ ] Kubernetes
+- [ ] Cloud (AWS/GCP(AZURE)
 - [ ] Observability
 - [ ] Infrastructure as Code (IAC) 
 
@@ -34,6 +35,21 @@ Practical DevOps learning journey through real projects.
 |--------------------------------|-------------------------------------------------|
 |        `git/git_notes.md`      |  Add actions and practice with a git            |
 
+## Docker 
+|             FILE               |                     Description                 |
+|--------------------------------|-------------------------------------------------|
+|    /system_info/Dockerfile     |     File docker configuration                   |
+|    /system_info/system_info.py |    Script with a system information             |
+|  /compose/docker-compose.yaml  |     A yaml configuration for a docker compose   |
+|         docker_notes.md        |    a small notations for docker                 | 
+
+## CI - CD 
+|             FILE                   |                     Description                 |
+|------------------------------------|-------------------------------------------------|
+|   tests/test_system.info.py        |  An automated test for a CI/CD practice         |
+| .github/workflows/docker-buid-yaml |  CI/CD file automation test for a docker image  |
+
+
 ## Structure
 
 ```
@@ -48,6 +64,19 @@ devops_portfolio/
 │   └── app.yaml
 ├── git/
 │   └── git_notes.md
+├── docker
+│   └── system_info/
+│        └── Dockerfile
+│        └── system_info.py
+│   └── compose/
+│        └── docker-compose.yaml
+│   └── docker_notes.md
+├── tests/
+│   └── test_system_info.py
+├── .github/
+│   └── workflows/
+│       └── docker-build.yaml
+├── .gitignore
 └── README.md
 ```
 
