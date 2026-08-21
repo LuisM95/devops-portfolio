@@ -4,6 +4,9 @@ FROM python:3.11-slim
 # Working directory 
 WORKDIR /app
 
+# Install dependencies
+RUN pip install prometheus_client
+
 # Copy app
 COPY app.py .
 
