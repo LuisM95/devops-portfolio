@@ -33,3 +33,11 @@ Thumbs.db
 minikube-linux-amd64
 kubectl
 v1.36.3
+
+# Terraform files
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+*.tfvars
+crash.log 

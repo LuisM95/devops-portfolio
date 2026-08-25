@@ -32,9 +32,6 @@ class DevOpsHandler(BaseHTTPRequestHandler):
         start_time = time.time()
 
         if self.path == '/':
-            self.send_response(200)
-            self.send_header('Content-Type', 'application/json')
-            self.end_headers()
             response = {
                     'status' : 'ok',
                     'message' : 'DevOps Portfolio - Kubernetes App',
@@ -42,15 +39,22 @@ class DevOpsHandler(BaseHTTPRequestHandler):
                     'os' : platform.system(),
                     'version' : '1.0'
                     }
-            self.wfile.write(json.dumps(response).encode())
+            body = json.dumps(response).encode()
+            self.send_response(200)
+            self.send_header('Content-Type', 'application/json')
+            self.send_header('Content-Length',  str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
             REQUEST_COUNT.labels('GET','/','200').inc()
 
         elif self.path == '/health':
+            response = {'status': 'healthy'}
+            body = json.dumps(response).encode()
             self.send_response(200)
             self.send_header('Content-Type', 'application/json')
+            self.send_header('Content-Length', str(len(body)))
             self.end_headers()
-            response = {'status': 'healthy'}
-            self.wfile.write(json.dumps(response).encode())
+            self.wfile.write(body)
             REQUEST_COUNT.labels('GET', '/health', '200').inc() 
 
         elif self.path == '/metrics':
