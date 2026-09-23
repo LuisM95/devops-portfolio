@@ -10,10 +10,10 @@ Practical DevOps learning journey through real projects.
 - [x] Docker
     - [x] Docker compose
 - [x] CI/CD 
-- [ ] Kubernetes
+- [x] Kubernetes
 - [ ] Cloud (AWS/GCP(AZURE)
-- [ ] Observability
-- [ ] Infrastructure as Code (IAC) 
+- [x] Observability
+- [x] Infrastructure as Code (IAC) 
 
 
 ## Scripts 
@@ -50,6 +50,26 @@ Practical DevOps learning journey through real projects.
 | .github/workflows/docker-buid-yaml |  CI/CD file automation test for a docker image  |
 
 
+## Documentation
+Complete documentation for each topic covered in this roadmap.
+
+| Document | Description |
+|----------|-------------|
+| `docs/01-linux.md` | Linux fundamentals and key commands |
+| `docs/02-networking.md` | Networking concepts and tools |
+| `docs/03-yaml.md` | YAML syntax and use cases |
+| `docs/04-git.md` | Git workflow and GitFlow |
+| `docs/05-docker.md` | Docker, Compose and Docker Hub |
+| `docs/06-kubernetes.md` | Kubernetes objects and kubectl |
+| `docs/07-cicd.md` | CI/CD with GitHub Actions |
+| `docs/08-observability.md` | Prometheus and Grafana |
+| `docs/09-terraform.md` | Infrastructure as Code with Terraform |
+
+## Postmortems
+| # | Title |
+|---|-------|
+| 001 | HTTP/1.0 Incompatibility with Kubernetes Port-Forward |
+
 ## Structure
 
 ```
@@ -76,7 +96,19 @@ devops_portfolio/
 ├── .github/
 │   └── workflows/
 │       └── docker-build.yaml
-├── .gitignore
+├── docs/
+    └── postmortems
+        └── 001_http10_kubernetes_portforward.md
+    └──01-linux.md
+    └──02-networking.md
+    └──03-yaml.md
+    └──04_git.md
+    └──05_docker.md
+    └──06_kubernetes.md
+    └──07_cicd.md
+    └──08_observability.md
+    └──09-terraform.md
+├──.gitignore
 └── README.md
 ```
 
